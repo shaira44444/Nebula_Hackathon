@@ -1,0 +1,72 @@
+{
+  "shipped_config": "resample='borderline'",
+  "class_counts": {
+    "Normal": 234,
+    "Side II": 24,
+    "Side I": 14
+  },
+  "stratified_cv": {
+    "macro_f1_mean": 0.814639209101139,
+    "macro_f1_std": 0.035313133138294366,
+    "macro_f1_min": 0.7592164630791239,
+    "macro_f1_max": 0.8657913690213718,
+    "per_class_f1_mean": {
+      "Normal": 0.9728331385152695,
+      "Side I": 0.5793324431680775,
+      "Side II": 0.8917520456200697
+    },
+    "per_class_f1_std": {
+      "Normal": 0.003976286562168594,
+      "Side I": 0.08587032323655273,
+      "Side II": 0.020882189748789193
+    },
+    "sideI_recall_mean": 0.625,
+    "seeds": 8,
+    "k": 5
+  },
+  "baseline_cv": {
+    "macro_f1_mean": 0.8035995188653648,
+    "macro_f1_std": 0.034368511459866365,
+    "macro_f1_min": 0.7613240132253645,
+    "macro_f1_max": 0.8685838157929521,
+    "per_class_f1_mean": {
+      "Normal": 0.9729874013372842,
+      "Side I": 0.5532639146376632,
+      "Side II": 0.8845472406211471
+    },
+    "per_class_f1_std": {
+      "Normal": 0.005761020763910301,
+      "Side I": 0.08460706840042953,
+      "Side II": 0.026221128887479107
+    },
+    "sideI_recall_mean": 0.5535714285714286,
+    "seeds": 8,
+    "k": 5
+  },
+  "oof_confusion": {
+    "macro_f1": 0.8657913690213718,
+    "confusion_matrix": [
+      [
+        227,
+        6,
+        1
+      ],
+      [
+        2,
+        12,
+        0
+      ],
+      [
+        1,
+        2,
+        21
+      ]
+    ],
+    "labels": [
+      "Normal",
+      "Side I",
+      "Side II"
+    ],
+    "report": "              precision    recall  f1-score   support\n\n      Normal      0.987     0.970     0.978       234\n      Side I      0.600     0.857     0.706        14\n     Side II      0.955     0.875     0.913        24\n\n    accuracy                          0.956       272\n   macro avg      0.847     0.901     0.866       272\nweighted avg      0.964     0.956     0.959       272\n"
+  }
+}

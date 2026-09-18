@@ -1,0 +1,38 @@
+{
+  "segmentation": {
+    "predicted_segments": 110,
+    "ground_truth_segments": 110,
+    "matched_1to1": 110,
+    "mean_iou": 1.0,
+    "min_iou": 1.0
+  },
+  "stratified_cv": {
+    "macro_f1_mean": 0.988419833666702,
+    "macro_f1_std": 2.220446049250313e-16,
+    "normal_f1_mean": 0.9937888198757764,
+    "abnormal_f1_mean": 0.9830508474576267,
+    "seeds": 15,
+    "k": 5
+  },
+  "chronological_cv": {
+    "macro_f1": 0.9884198336667018,
+    "normal_f1": 0.9937888198757764,
+    "abnormal_f1": 0.9830508474576272,
+    "confusion_matrix": [
+      [
+        80,
+        0
+      ],
+      [
+        1,
+        29
+      ]
+    ],
+    "labels": [
+      "Normal",
+      "Abnormal resistance"
+    ],
+    "report": "                     precision    recall  f1-score   support\n\n             Normal      0.988     1.000     0.994        80\nAbnormal resistance      1.000     0.967     0.983        30\n\n           accuracy                          0.991       110\n          macro avg      0.994     0.983     0.988       110\n       weighted avg      0.991     0.991     0.991       110\n",
+    "k": 5
+  }
+}
